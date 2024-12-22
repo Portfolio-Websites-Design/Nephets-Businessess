@@ -36,10 +36,10 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page" style="overflow-x: hidden; ">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  <header id="header" class="header d-flex align-items-center  sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex justify-content-center align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -83,9 +83,85 @@
 
   <main class="main">
 
+   <!-- Hero Section -->
+<div class="hero-sec container" height="320px">
+    <div class="row my-5">
+      <div class="col my-5">
+        <p>#Creativity at It’s Best</p>
+        <h2> Creating <span>Visual Stories</span><br> Capturing Moments</h2>
+        <p>Your Go to Solution for you Graphics Problems.</p>
+      </div>
+
+      <!-- Mid Section -->
+      <div class="col my-5">
+          <div class="left">
+             <div class="line-1 line"></div>
+             <div class="circle"></div>
+             <div class="line-1 line"></div>
+          </div>
+
+          <div class="right">
+                <h3>Ismael Bett</h3>
+                <p>Lorem ipsum dolor sit consectetur <br>
+                    adipisicing elit.</p>
+                 <div class="rate d-flex align-items-center justify-content-start">
+                      <span class="h5 mt-2 me-3">4.9</span>  
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                 </div>
+          </div>
+      </div>
+
+      <!-- Right Sections -->
+      <div class="col my-5 hero-img align-items-start">
+
+
+           
+      </div>
+  </div>
+</div>
+
+
+    <style>
+
+
+      .hero-img{
+        background-image: url("assets/img/portfolio/photographer-9022677_1920.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        scale: 200%;
+      }
+
+      
+
+
+              /* HTML: <div class="star"></div> */
+        .star {
+          width: 30px;  
+          aspect-ratio: 1;
+          background: #F8CA00;
+          clip-path: polygon(50% 0,
+            calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+            calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+            calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+            calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+          ); 
+          /* or more simple
+          clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+          */
+        }
+
+    
+    </style>
+
+
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
